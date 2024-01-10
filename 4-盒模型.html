@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 
+      盒模型：box-sizing: content-box/border-box
+        组成：内容+padding+border+margin
+        类型：内容盒子（w3c盒子，标准盒子），边框盒子（ie盒子，怪异盒子）
+        内容盒子：width，height设置给内容
+          盒子宽：width+padding-left+padding+right+border-left+border+right
+          盒子所占的空间：盒子宽高+margin
+        边框盒子：width，height设置给内容+padding+边框
+          盒子宽：width
+          盒子所占的空间：width+margin
+
+    */
+
+    div{
+      box-sizing: border-box;
+      width: 400px;
+      height: 400px;
+      background-color: lightcoral;
+      padding: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    盒模型
+  </div>
+</body>
+</html>

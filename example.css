@@ -1,0 +1,36 @@
+/*
+  1. 变量 @变量名
+  2. 混合
+  3. 嵌套
+  4. 映射
+*/
+.border {
+  border: 10px solid black;
+  border-radius: 50px;
+}
+.outer {
+  background-color: lightcoral;
+  width: 300px;
+  color: white;
+  border: 10px solid black;
+  border-radius: 50px;
+}
+.outer .inner {
+  background-color: white;
+  border-radius: 50px;
+}
+.outer .inner:hover {
+  background-color: black;
+}
+.outer ol li {
+  color: red;
+}
+.content {
+  background-color: lightblue;
+  width: calc(100vw - 20px);
+  height: 300px;
+  color: white;
+  font-size: 25px;
+  border: 10px solid black;
+  border-radius: 50px;
+}

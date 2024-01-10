@@ -1,0 +1,55 @@
+// lesscss.cn 
+/*
+  1. 变量 @变量名
+  2. 混合
+  3. 嵌套
+  4. 映射
+*/
+@myWidth: 400px - 100em;
+@mycolor: white;
+@mysize: 25px;
+
+.border{
+  border: 10px solid black;
+  border-radius: 50px;
+}
+
+.outer{
+  background-color: lightcoral;
+  width: @myWidth;
+  color: @mycolor;
+  // 混合
+  .border();
+  .inner{
+    background-color: @mycolor;
+    // 映射
+    border-radius: .border[border-radius];
+    &:hover{
+      background-color: black;
+    }
+  }
+  ol{
+    @mycolor: red;
+    li{
+      color: @mycolor;
+    }
+  }
+}
+.content{
+  background-color: lightblue;
+  // width: @myWidth;
+
+  // calc(100vw - 20px) -> 100vw - 20vw
+  // ~calc(100vw - 20px) -> 100vw - 20px
+  width: calc(100vw - 20px); 
+  height: @myWidth;
+  color: @mycolor;
+  font-size: @mysize;
+  .border()
+}
+
+
+
+
+
+

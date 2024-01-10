@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      padding: 10px;
+      background-color: lightblue;
+    }
+    span{
+      width: 200px;
+      height: 200px;
+      /* background-color: lawngreen; */
+      margin: 10px;
+      padding: 10px;
+    }
+    b{
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+    块元素：
+      div,h1-h6,ul>li,ol>li,dl>dt/dd,p,pre
+      header,footer
+    特点：
+      1. 宽度100%，独占一行；宽度由子元素去决定
+      2. 可以指定宽高，设置上下左右margin，padding
+  -->
+  <div>块元素
+    <span>行内元素</span><span>行内元素</span><span>行内元素</span><span>行内元素</span>
+  </div>
+
+  <!-- 
+    行内元素：span，a，img
+    特点：
+      1. 不可以设置宽高
+      2. 宽高由元素内容决定
+      3. 和其他行内元素共享一行
+      4. 行内元素不可以嵌套元素
+      5. 设置左右margin，padding
+
+   -->
+  <img src="https://img1.baidu.com/it/u=825191944,1031987093&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="无法加载图片" width="200px" height="200px">
+  <b>b标签</b><b>b标签</b>
+</body>
+</html>
