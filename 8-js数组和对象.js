@@ -5,18 +5,18 @@ let res = {
   data: [
     {
       id: 1,
-      name: '张三'
+      name: '张清闻'
     },
     {
       id: 2,
-      name: '李四'
+      name: '李超'
     }
   ]
 }
 
 let data = {
-  id: 1,
-  name: '张三'
+  id: 2,
+  name: '张清闻'
 }
 
 // let { data } = res
@@ -26,7 +26,7 @@ let data = {
 // 深拷贝
 let newObj = { ...data }
 
-data.name = 'tom'
+data.name = '张清闻'
 
 
 // 数组api: arr.push({}) arr.pop() .map() .foreach() .filter()
